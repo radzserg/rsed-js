@@ -1,7 +1,5 @@
-import AppEvent from "./AppEvent";
-
-export type AppEventHandler = (event: AppEvent) => void;
+export type AppEventHandler = (event: object) => void;
 
 export interface IListenerProvider {
-    getListenersForEvent(event: AppEvent) : AppEventHandler[];
+    getListenersForEvent(event: object): AppEventHandler[];
 }

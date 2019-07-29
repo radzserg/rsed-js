@@ -1,6 +1,5 @@
 import EventDispatcher from "../EventDispatcher";
 import { IListenerProvider } from "../IListenerProvider";
-import NamedEvent from "../NamedEvent";
 
 describe("EventDispatcher", () => {
     test("it add listeners", () => {
@@ -13,9 +12,9 @@ describe("EventDispatcher", () => {
 
         const eventDispatcher = new EventDispatcher();
         eventDispatcher.addListenerProvider(mockListenerProvider);
-        const event = new NamedEvent("USER_LOGGED_IN");
+        const event = {};
         eventDispatcher.dispatch(event);
-        // expect(eventHandler).toHaveBeenCalledTimes(1);
+        expect(eventHandler).toHaveBeenCalledTimes(1);
         expect(eventHandler).toHaveBeenCalledWith(event);
     });
 });
