@@ -15,6 +15,7 @@
     "listener"
   ],
   "author": "Sergey Radzishevskii <radzserg@gmail.com>",
+  "homepage": "https://github.com/radzserg/rsed-js",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.15",
