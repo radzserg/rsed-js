@@ -1,3 +1,3 @@
 export interface IEventDispatcher {
-    dispatch: (event: object) => void;
+    dispatch: (event: any) => void;
 }
