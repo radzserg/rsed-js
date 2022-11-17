@@ -4,8 +4,4 @@ import EventDispatcher from "./EventDispatcher";
 
 export default EventDispatcher;
 
-export {
-    AppEventHandler,
-    IEventDispatcher,
-    IListenerProvider
-}
+export { AppEventHandler, IEventDispatcher, IListenerProvider };

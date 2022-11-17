@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/jest", "npm:29.2.1"],\
             ["jest", "virtual:fedf039df8d9b114040fb11b1e41fb498a0b0475a3f703dcd4476fb9c86fd8cebca52931342995dcf65bc1932b41e63eb5e073db1fbaf0f7986a39284c4f4263#npm:29.2.2"],\
+            ["prettier", "npm:2.7.1"],\
             ["ts-jest", "virtual:fedf039df8d9b114040fb11b1e41fb498a0b0475a3f703dcd4476fb9c86fd8cebca52931342995dcf65bc1932b41e63eb5e073db1fbaf0f7986a39284c4f4263#npm:29.0.3"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
           ],\
@@ -3740,6 +3741,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["prettier", [\
+        ["npm:2.7.1", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.7.1-d1f40f5e1a-55a4409182.zip/node_modules/prettier/",\
+          "packageDependencies": [\
+            ["prettier", "npm:2.7.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["pretty-format", [\
         ["npm:29.2.1", {\
           "packageLocation": "./.yarn/cache/pretty-format-npm-29.2.1-b89d018340-d192cbd3de.zip/node_modules/pretty-format/",\
@@ -3892,6 +3902,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rsed", "workspace:."],\
             ["@types/jest", "npm:29.2.1"],\
             ["jest", "virtual:fedf039df8d9b114040fb11b1e41fb498a0b0475a3f703dcd4476fb9c86fd8cebca52931342995dcf65bc1932b41e63eb5e073db1fbaf0f7986a39284c4f4263#npm:29.2.2"],\
+            ["prettier", "npm:2.7.1"],\
             ["ts-jest", "virtual:fedf039df8d9b114040fb11b1e41fb498a0b0475a3f703dcd4476fb9c86fd8cebca52931342995dcf65bc1932b41e63eb5e073db1fbaf0f7986a39284c4f4263#npm:29.0.3"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
           ],\
