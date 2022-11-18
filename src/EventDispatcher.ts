@@ -2,7 +2,6 @@ import { AppEventHandler, IListenerProvider } from "./IListenerProvider";
 import { IEventDispatcher } from "./IEventDispatcher";
 
 export default class EventDispatcher implements IEventDispatcher {
-
   private listeners: IListenerProvider[] = [];
 
   dispatch(event: any) {
@@ -18,5 +17,12 @@ export default class EventDispatcher implements IEventDispatcher {
 
   addListenerProvider(listener: IListenerProvider) {
     this.listeners.push(listener);
+  }
+
+  deleteListenerProvider(listener: IListenerProvider) {
+    const index = this.listeners.indexOf(listener);
+    if (index !== -1) {
+      this.listeners.splice(index, 1);
+    }
   }
 }
