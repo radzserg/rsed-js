@@ -1,10 +1,14 @@
 {
   "name": "rsed",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Event Dispatcher",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
+  "files": [
+    "dist/**"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [

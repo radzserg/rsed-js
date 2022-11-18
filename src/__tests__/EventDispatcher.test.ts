@@ -62,7 +62,7 @@ describe("EventDispatcher", () => {
       expect(eventHandler).toHaveBeenCalledWith(event);
     });
 
-    eventDispatcher.deleteListenerProvider(mockedListenerProviders[1]);
+    eventDispatcher.removeListenerProvider(mockedListenerProviders[1]);
 
     const event2 = { b: 456 };
     eventDispatcher.dispatch(event2);

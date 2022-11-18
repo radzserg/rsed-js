@@ -19,7 +19,7 @@ export default class EventDispatcher implements IEventDispatcher {
     this.listeners.push(listener);
   }
 
-  deleteListenerProvider(listener: IListenerProvider) {
+  removeListenerProvider(listener: IListenerProvider) {
     const index = this.listeners.indexOf(listener);
     if (index !== -1) {
       this.listeners.splice(index, 1);
