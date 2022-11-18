@@ -3,24 +3,27 @@
   "version": "0.0.3",
   "description": "Event Dispatcher",
   "scripts": {
-    "test": "jest",
-    "build": "rm -Rf dist && NODE_ENV=production tsc --build tsconfig.json && npm run copy:package",
-    "copy:package": "cp README.md package.json dist/",
-    "deploy": "npm run build && npm publish dist"
+    "test": "jest"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "event",
     "dispatcher",
     "listener"
   ],
+  "packageManager": "yarn@3.3.0",
   "author": "Sergey Radzishevskii <radzserg@gmail.com>",
   "homepage": "https://github.com/radzserg/rsed-js",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^29.2.1",
-    "jest": "^29.2.2",
+    "@types/node": "^18.11.9",
     "prettier": "^2.7.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@types/jest": "^29.2.3",
+    "jest": "^29.3.1"
   }
 }
